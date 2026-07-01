@@ -7,13 +7,30 @@ package entidad;
  * TODO: Definir cómo se relaciona Usuario con Libro dentro de esta clase.
  */
 public class SolicitudPrestamo {
+	
+	    private Usuario usuario;
+	    private Libro libro;
 
-	// TODO: declarar atributos (usuario, libro)
 
-	// TODO: crear el constructor
+	    public SolicitudPrestamo(Usuario usuario, Libro libro) {
+	        this.usuario = usuario;
+	        this.libro = libro;
+	    }
 
-	// TODO: crear getters
+	  
+	    public Usuario getUsuario() {
+	        return usuario;
+	    }
 
-	// TODO: sobrescribir toString()
+	    public Libro getLibro() {
+	        return libro;
+	    }
 
-}
+	    @Override
+	    public String toString() {
+	        return "SolicitudPrestamo{" +
+	                "usuario=" + usuario +
+	                ", libro=" + libro +
+	                '}';
+	    
+	}
